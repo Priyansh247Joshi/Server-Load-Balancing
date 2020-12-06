@@ -80,9 +80,9 @@ for(int i=0;i<n;i++)
 }
 //Execution time of tasks.
 double r[3];// ready time of resource.
-r[0]=5;//s1.clock;
-r[1]=3;//s2.clock;
-r[2]=2;//s3.clock;
+r[0]=1;
+r[1]=1;
+r[2]=1;
 double et1[n],et2[n],et3[n];
 for(int i=0;i<n;i++)
     et1[i]=ins[i]/r[0];
@@ -177,9 +177,9 @@ for(int i=0;i<n;i++)
 }
 //Execution time of tasks.
 double r[3];// ready time of resource.
-r[0]=5;//s1.clock;
-r[1]=3;//s2.clock;
-r[2]=2;//s3.clock;
+r[0]=1;
+r[1]=1;
+r[2]=1;
 double et1[n],et2[n],et3[n];
 for(int i=0;i<n;i++)
     et1[i]=ins[i]/r[0];
@@ -317,9 +317,9 @@ for(int i=0;i<n;i++)
 }
 //Execution time of tasks.
 double r[3];// ready time of resource.
-r[0]=5;//s1.clock;
-r[1]=3;//s2.clock;
-r[2]=2;//s3.clock;
+r[0]=1;
+r[1]=1;
+r[2]=1;
 double et1[n],et2[n],et3[n];
 for(int i=0;i<n;i++)
     et1[i]=ins[i]/r[0];
