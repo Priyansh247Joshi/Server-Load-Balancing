@@ -80,16 +80,16 @@ for(int i=0;i<n;i++)
 }
 //Execution time of tasks.
 double r[3];// ready time of resource.
-r[0]=1;
-r[1]=1;
-r[2]=1;
+r[0]=0;
+r[1]=0;
+r[2]=0;
 double et1[n],et2[n],et3[n];
 for(int i=0;i<n;i++)
-    et1[i]=ins[i]/r[0];
+    et1[i]=ins[i]/5;
 for(int i=0;i<n;i++)
-    et2[i]=ins[i]/r[1];
+    et2[i]=ins[i]/3;
 for(int i=0;i<n;i++)
-    et3[i]=ins[i]/r[2];
+    et3[i]=ins[i]/2;
 printf("\n1st Completion time and remaining resources are:\n ");
 MinMin(n,et1,m,r);
 printf("\n2nd Completion time and remaining resources are:\n ");
@@ -177,16 +177,16 @@ for(int i=0;i<n;i++)
 }
 //Execution time of tasks.
 double r[3];// ready time of resource.
-r[0]=1;
-r[1]=1;
-r[2]=1;
+r[0]=0;
+r[1]=0;
+r[2]=0;
 double et1[n],et2[n],et3[n];
 for(int i=0;i<n;i++)
-    et1[i]=ins[i]/r[0];
+    et1[i]=ins[i]/5;
 for(int i=0;i<n;i++)
-    et2[i]=ins[i]/r[1];
+    et2[i]=ins[i]/3;
 for(int i=0;i<n;i++)
-    et3[i]=ins[i]/r[2];
+    et3[i]=ins[i]/2;
 printf("\n1st Completion time and remaining resources are:\n ");
 MaxMin(n,et1,m,r);
 printf("\n2nd Completion time and remaining resources are:\n ");
@@ -317,16 +317,16 @@ for(int i=0;i<n;i++)
 }
 //Execution time of tasks.
 double r[3];// ready time of resource.
-r[0]=1;
-r[1]=1;
-r[2]=1;
+r[0]=0;
+r[1]=0;
+r[2]=0;
 double et1[n],et2[n],et3[n];
 for(int i=0;i<n;i++)
-    et1[i]=ins[i]/r[0];
+    et1[i]=ins[i]/5;
 for(int i=0;i<n;i++)
-    et2[i]=ins[i]/r[1];
+    et2[i]=ins[i]/3;
 for(int i=0;i<n;i++)
-    et3[i]=ins[i]/r[2];
+    et3[i]=ins[i]/2;
 printf("\n1st Completion time and remaining resources are:\n ");
 EnMaxMin(n,et1,m,r);
 printf("\n2nd Completion time and remaining resources are:\n ");
@@ -487,7 +487,7 @@ s3.ram = 6;
 s3.cache = 2;
 
 int choice;
-printf("Enter which algorithm you want to run\n");
+printf("Enter which algorithm you want to run (1 for min-min,2 for max-min, 3 for Enhanced max-min,4 for greedy)\n");
 scanf("%d",&choice);
 
 switch(choice)
