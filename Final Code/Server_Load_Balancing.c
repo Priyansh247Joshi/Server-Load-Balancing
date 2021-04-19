@@ -369,27 +369,7 @@ void quickSort(int array[], int low, int high) {
 
 void Greedy()
 {
-struct server s1;
-struct server s2;
-struct server s3;
 
-s1.storage = 1000;
-s1.clock = 5;
-s1.instr_cap = 500;
-s1.ram = 8;
-s1.cache=3;
-
-s2.storage = 1500;
-s2.clock = 3;
-s2.instr_cap = 350;
-s2.ram = 10;
-s2.cache = 4;
-
-s3.storage = 1000;
-s3.clock = 2;
-s3.instr_cap = 600;
-s3.ram = 6;
-s3.cache = 2;
 int n;
 
 printf("Enter the number of tasks\n");
